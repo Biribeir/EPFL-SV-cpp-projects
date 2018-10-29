@@ -1,0 +1,55 @@
+Start testing: Oct 23 23:24 CEST
+----------------------------------------------------------
+1/1 Testing: Network_simulation
+1/1 Test: Network_simulation
+Command: "/Users/Biankricc/Desktop/EPFL/BA3/Informatique/Série 5/NetworkCode/build/testNetSim"
+Directory: /Users/Biankricc/Desktop/EPFL/BA3/Informatique/Série 5/NetworkCode/build
+"Network_simulation" start time: Oct 23 23:24 CEST
+Output:
+----------------------------------------------------------
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from networkTest
+[ RUN      ] networkTest.initialize
+[       OK ] networkTest.initialize (1 ms)
+[ RUN      ] networkTest.connect
+/Users/Biankricc/Desktop/EPFL/BA3/Informatique/Série 5/NetworkCode/src/test_main.cpp:23: Failure
+Value of: trylink
+  Actual: true
+Expected: false
+/Users/Biankricc/Desktop/EPFL/BA3/Informatique/Série 5/NetworkCode/src/test_main.cpp:26: Failure
+Expected equality of these values:
+  net.degree(9)+net.degree(10)
+    Which is: 5
+  2
+/Users/Biankricc/Desktop/EPFL/BA3/Informatique/Série 5/NetworkCode/src/test_main.cpp:30: Failure
+Expected equality of these values:
+  ngb.size()
+    Which is: 5
+  3
+/Users/Biankricc/Desktop/EPFL/BA3/Informatique/Série 5/NetworkCode/src/test_main.cpp:33: Failure
+The difference between numlink and 200 is 40, which exceeds 5, where
+numlink evaluates to 160,
+200 evaluates to 200, and
+5 evaluates to 5.
+[  FAILED  ] networkTest.connect (1 ms)
+[ RUN      ] networkTest.values
+[       OK ] networkTest.values (0 ms)
+[----------] 3 tests from networkTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (2 ms total)
+[  PASSED  ] 2 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] networkTest.connect
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"Network_simulation" end time: Oct 23 23:24 CEST
+"Network_simulation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 23 23:24 CEST

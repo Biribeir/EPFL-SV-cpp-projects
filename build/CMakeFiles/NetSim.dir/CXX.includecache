@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Biankricc/Desktop/EPFL/BA3/Informatique/Série 5/NetworkCode/src/network.cpp
+network.h
+/Users/Biankricc/Desktop/EPFL/BA3/Informatique/Série 5/NetworkCode/src/network.h
+random.h
+/Users/Biankricc/Desktop/EPFL/BA3/Informatique/Série 5/NetworkCode/src/random.h
+map
+-
+vector
+-
+iostream
+-
+
+/Users/Biankricc/Desktop/EPFL/BA3/Informatique/Série 5/NetworkCode/src/network.h
+map
+-
+vector
+-
+
+/Users/Biankricc/Desktop/EPFL/BA3/Informatique/Série 5/NetworkCode/src/random.h
+random
+-
+vector
+-
+algorithm
+-
+
