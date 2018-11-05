@@ -13,36 +13,36 @@ public:
     Network() {}
 
 /*! Resizes the list of nodes (\ref values) */
-    void resize(const size_t&); //DONE
+    void resize(const size_t&); 
 /*! Adds a bidirectional link between two nodes
   @param[in] a,b the indexes if the two nodes 
   @param[out] success the link was succesfully inserted
  */
-    bool add_link(const size_t&, const size_t&); //DONE
+    bool add_link(const size_t&, const size_t&); 
 /*! Creates random connections between nodes: each node *n* will be linked with *degree(n)* other nodes (randomly chosen) where *degree(n)* is Poisson-distributed.
 
   All previous links are cleared first.
   @param mean_deg the average of the Poisson distribution.
  */
-    size_t random_connect(const double&); //DONE
+    size_t random_connect(const double&);
 /*! Resets all node values.
   @param[in] vector of new node values
   @param[out] number of nodes succesfully reset
  */
-    size_t set_values(const std::vector<double>&); //FAIRE
+    size_t set_values(const std::vector<double>&); 
 /*! Number of nodes */
-    size_t size() const; //DONE
+    size_t size() const; 
 /*! Degree (number of links) of node no *n* */
-    size_t degree(const size_t &_n) const; //DONE CONTROLER
+    size_t degree(const size_t &_n) const;
 /*! Value of node no *n* */
-    double value(const size_t &_n) const; //DONE
+    double value(const size_t &_n) const; 
 /*! All node values in descending order */
-    std::vector<double> sorted_values() const; //DONE
+    std::vector<double> sorted_values() const; 
 /*! All neighbors (linked) nodes of node no *n* */
-    std::vector<size_t> neighbors(const size_t&) const; //DONE CONTROLER
+    std::vector<size_t> neighbors(const size_t&) const; 
 
 private:
     std::vector<double> values; 
-    std::multimap<size_t, size_t> links; // <positions des noeuds reliés au noeud d'intéret, position noeud d'intérêt>
+    std::multimap<size_t, size_t> links;
 
 };
