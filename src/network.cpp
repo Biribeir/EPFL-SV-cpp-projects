@@ -2,7 +2,6 @@
 #include "random.h"
 #include <map>
 #include <vector>
-#include <iostream>
 
 // Resizes the list of nodes 
 void Network::resize(const size_t& n){
